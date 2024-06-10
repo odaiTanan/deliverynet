@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.btn {
+  @apply mobile:text-lg hover:bg-orange-500 transition ease-linear duration-200 mobile:w-[95%]  tab:w-[80%] w-[60%] bg-orange-600 text-white p-2 text-center rounded-lg text-2xl;
+}
+.but {
+  @apply py-3 shadow-btn hover:shadow-black transition-all duration-200   px-6 mobile:px-4 mobile:text-sm  text-lg bg-white rounded-md text-orange-600 text-center;
+}
+* {
+  @apply font-font m-0 p-0 box-border;
+}
+.dashLink {
+  @apply text-slate-800 mb-2 p-6 hover:bg-white hover:rounded-l-3xl  text-2xl  tab:text-xl;
+}
+.Links .active {
+  @apply bg-white rounded-l-3xl;
+}
+table {
+  @apply w-[90%] mobile:w-[98%] tab:text-[15px] mobile:text-[12px] border-2 border-white rounded-lg;
+}
+td {
+  @apply text-center p-4 mobile:p-1 tab:p-2 w-full;
+}
+tr {
+  @apply bg-slate-800 text-orange-500 flex items-center w-full;
+}
+tr:nth-child(even) {
+  @apply bg-orange-500 text-slate-800;
+}
+th {
+  @apply text-orange-50 border-b-2 w-full;
+}
+.input {
+  @apply w-[60%] tab:w-[80%] mobile:w-[95%];
+}
+.fa-pen,
+.fa-plus {
+  @apply text-green-600 tab:p-[6px] mobile:text-[15px]  text-[20px] tab:text-[15px] cursor-pointer p-2 hover:bg-slate-300 tab:mx-1 rounded-circle bg-white;
+}
+.fa-trash,
+.fa-minus {
+  @apply text-red-600 tab:p-[6px]  mobile:text-[15px] text-[20px] tab:text-[15px] cursor-pointer p-2  hover:bg-slate-300 rounded-circle bg-white;
+}
+.request {
+  @apply bg-slate-800  p-3;
+}
+.request:nth-child(even) {
+  @apply bg-orange-600;
+}
+.request:nth-child(even) .items {
+  @apply bg-orange-600 text-slate-600;
+}

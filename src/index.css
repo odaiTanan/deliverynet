@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+.input {
+  @apply !w-[85%] text-lg p-2 mobile:p-3 mobile:w-[90%] border-2 border-orange-600 rounded-md;
+}
+.active {
+  @apply text-black;
+}
+.btn {
+  @apply mobile:text-lg hover:bg-orange-500 transition ease-linear duration-200 !w-[85%] bg-orange-600 text-white p-2 text-center rounded-lg text-2xl;
+}
+.but {
+  @apply py-3 shadow-btn hover:shadow-black transition-all duration-200   px-6 mobile:px-4 mobile:text-sm  text-lg bg-white rounded-md text-orange-600 text-center;
+}
+* {
+  @apply font-font m-0 p-0 box-border;
+}
+.error {
+  @apply text-red-700 !w-[85%] mobile:w-[90%] rounded-md p-1 bg-red-200 text-sm mb-1 hidden;
+}
+.li {
+  @apply hover:border-b-black border-b-2 border-b-white pb-1;
+}
+.inActiveUl {
+  @apply flex gap-6 cursor-pointer text-black tab:absolute tab:top-[-100%] tab:w-full tab:hidden  tab:items-center   tab:flex-col;
+}
+.activeUl {
+  @apply flex   tab:h-[83vh] tab:transition-all tab:duration-200 cursor-pointer text-black tab:absolute right-0 tab:rounded-2xl tab:top-[72px]  tab:w-full tab:bg-orange-600 tab:pt-11   tab:items-center   tab:flex-col;
+}
+.activeUl .li {
+  @apply w-full text-center pb-3  font-bold hover:bg-[rgba(100,100,100,0.2)] py-6 m-0;
+}
+.center {
+  @apply flex justify-center items-center;
+}
+li img {
+  @apply rounded-circle w-[100px] h-[100px] bg-black cursor-pointer;
+}
+li {
+  @apply flex flex-col items-center;
+}
+.checked {
+  @apply font-bold border-b-2 border-b-black  tab:bg-[rgba(100,100,100,0.2)];
+}
+.activeMenu {
+  @apply border-4  border-orange-600;
+}
+.addrequestcon .inp {
+  @apply relative w-[500px] tab:w-[400px] mobile:w-[300px];
+}
+.addrequestcon .inp input {
+  @apply !w-full transition-all;
+}
+.addrequestcon .inp .title {
+  @apply absolute  top-[10px] left-[20px]  text-[20px] text-black transition-all;
+}
+.addrequestcon .inp input:focus + .title {
+  @apply absolute bg-white z-10 text-orange-600 top-[-25%] left-[30px];
+}
+.addrequestcon .inp input {
+  @apply p-3 text-[17px];
+}
+.addrequestcon .inp input:not(:placeholder-shown) + .title {
+  @apply absolute bg-white z-10 text-orange-600 top-[-25%] left-[30px];
+}
